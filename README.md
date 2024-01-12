@@ -7,10 +7,8 @@ This is a web application featuring a simple calculator and a notepad. The calcu
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
 - [Built With](#built-with)
 - [Author](#author)
-- [License](#license)
 
 ## Features
 
@@ -28,3 +26,26 @@ To run this project locally, follow these steps:
 
    ```bash
    git clone https://github.com/confused-soul/Simple-Calculator.git
+
+## Usage
+### Calculator:
+- Click on the numeric buttons (0-9) for input.
+- Use basic operation buttons (+, -, *, /) to perform calculations.
+- The "Clr" button resets the calculator.
+- The "=" button displays the result of the calculation.
+- The full expression and calculation history are visible above the calculator display.
+### Notepad:
+- Type your notes in the textarea provided.
+- Click "Add Note" to save the note to the list.
+- Each note in the list has options to edit or delete.
+- Use "Clear All Notes" to remove all notes.
+
+## Built With
+- HTML
+- CSS
+- JavaScript
+
+
+## Author
+### Md Yasir Khan
+GitHub: [confused-soul](https://github.com/confused-soul/)
