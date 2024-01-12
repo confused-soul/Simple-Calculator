@@ -1,6 +1,7 @@
 # Simple Calculator and Notepad Web App
 
 This is a web application featuring a simple calculator and a notepad. The calculator allows users to perform basic arithmetic operations, and the notepad enables users to create, edit, and delete notes.
+[Visit Site](https://confused-soul.github.io/Simple-Calculator/)
 
 ## Table of Contents
 
