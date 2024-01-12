@@ -1,0 +1,158 @@
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  margin: 0;
+  background: hsl(207, 100%, 85%);
+}
+
+.Content {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+#calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 8px;
+  width: 20vw;
+  padding: 5px;
+  border: 2px solid black;
+  background: #828282;
+}
+
+#display {
+  grid-column: span 4;
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: right;
+  font-size: 3em;
+}
+
+#fullExpression {
+  grid-column: span 4;
+  height: 1em;
+  align-self: end;
+  background-color: #f4f4f4;
+  padding: 2px;
+  text-align: right;
+  font-size: 1em;
+  color: #363636;
+}
+
+button {
+  padding: 10px;
+  font-size: 2.4em;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+.operator,
+.equals,
+.clear {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.operator:hover,
+.equals:hover,
+.clear:hover {
+  background-color: #e59400;
+}
+
+.notepad-container {
+  width: 25vw;
+  height: 80vh;
+  margin-left: 20px;
+  text-align: center;
+  border: 2px solid black;
+  background: #f9ffb5;
+}
+
+.notepad-container ul {
+  list-style-type: none;
+  height: 50vh;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.notepad-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  background: #d2ff3f;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.notepad-container textarea {
+  width: 75%;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.notepad-container button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.notepad-container button:hover {
+  background-color: #f0f0f0;
+}
+
+#history-container {
+  margin-top: 20px;
+  width: 25vw;
+  height: 80vh;
+  margin-right: 20px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #acffc1;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#history-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#history-list li {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#history-list li span {
+  flex-grow: 1;
+  margin-right: 10px;
+}

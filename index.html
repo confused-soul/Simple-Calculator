@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <h2>Simple Calculator</h2>
+    <div class="Content">
+        
+      <div class="notepad-container">
+        <div id="title">
+          <h3>Notes:</h3>
+        </div>
+        <div id="div-list">
+          <ul id="note-list"></ul>
+        </div>
+        <div id="inputnotes">
+          <textarea
+            id="note-input"
+            placeholder="Type your note here..."
+          ></textarea>
+          <button onclick="addNote()">Add Note</button>
+          <button onclick="clearNotes()">Clear All Notes</button>
+        </div>
+      </div>
+
+      <div id="calculator">
+        <div id="fullExpression"></div>
+        <div id="display">0</div>
+        <button class="clear" id="clear">Clr</button>
+        <button class="operator">/</button>
+        <button class="operator">*</button>
+        <button class="operator">-</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator" id="add" style="grid-row: span 2">+</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="equals" id="equals" style="grid-row: span 2">=</button>
+        <button class="number" style="grid-column: span 2">0</button>
+        <button class="operator">.</button>
+      </div>
+
+      <div id="history-container">
+        <h3>History:</h3>
+        <ul id="history-list"></ul>
+      </div>
+
+    </div>
+    <h5>Built by: Md Yasir Khan</h5>
+    <script src="script.js"></script>
+  </body>
+</html>
